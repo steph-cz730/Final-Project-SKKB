@@ -163,7 +163,7 @@ const textNodes = [
     text: 'The wolf you met on your way to grandmas had taken a shortcut and beat you to the cottage. You run home not falling for the ruse unaware that your grandmother has been consumed.  You wonder if you are next!',
     options: [
     {
-        text: 'Restart',
+        text: 'Play again?',
         nextText: -1
     }
     ]
@@ -284,6 +284,129 @@ const textNodes = [
     }
     ]
 },
+{
+    id: 21,
+    text: 'You put the lillies in the basket and get back on the path to grandmas house.',
+    options: [
+    {
+        text: 'Continue',
+        nextText: 24
+    }
+    ]
+},
+{
+    id: 22,
+    text: 'You put the frog in your pocket and get back on the path to grandmas house.',
+    options: [
+    {
+        text: 'Continue',
+        nextText: 25
+    }
+    ]
+},
+{
+    id: 23,
+    text: 'You take a moment to capture the wonderful view. You even take a few selfies and post them to the gram.',
+    options: [
+    {
+        text: 'Continue',
+        nextText: 25
+    }
+    ]
+},
+{
+    id: 24,
+    text: 'You arrive at grandmas house and knock on the door. Grandma calls out to you to come inside. As you hear the voice you notice it does not sound normal.... ',
+    options: [
+    {
+        text: 'Turn around and do not go inside',
+        nextText: 26
+    },
+    {
+        text: 'Go inside the cottage',
+        nextText: 27
+    }
+    ]
+},
+{
+    id: 25,
+    text: 'You arrive at grandmas house and knock on the door. Grandma calls out to you to come inside. As you hear the voice you notice it does not sound normal.... ',
+    options: [
+    {
+        text: 'Turn around and do not go inside',
+        nextText: 26
+    },
+    {
+        text: 'Go inside the cottage',
+        nextText: 29
+    }
+    ]
+},
+{
+    id: 26,
+    text: 'As you turn to leave, you hear footsteps approach and open the door. A large figure comes out into the light.  Its the wolf you met in the woods dressed as granny. You manage to run home unaware that grandma has been consumed... ',
+    options: [
+    {
+        text: 'Play again?',
+        nextText: -1
+    },
+    ]
+},
+{
+    id: 27,
+    text: 'Upon entering the cottage, you grandma does not look like herself at all.  As you get closer the figure jumps out showing itself to be the wolf you met on your way to grandmas.... ',
+    options: [
+    {
+        text: 'Run away',
+        nextText: 12
+    },
+    {
+        text: 'Give the lillies to the wolf',
+        nextText: 28
+    },
+    {
+        text: 'Stand and fight',
+        nextText: 13
+    },
+    ]
+},
+{
+    id: 28,
+    text: 'You begin to take steps back in an attempt to create space between you and the wolf.  The wolf notices and begins to step forward.  Remembering the lillies in your basket you pull them out but keep them hidden.  The wolf lunges at you, but you manage to sidestep and shove the lillies into the wolfs mouth.  The wolf instantly becomes ill and spits up grandma.  The wolf manages to leave the cottage despite the poison it was forced to ingest. You help grandma up and she asks you to stay and enjoy the basket with her.',
+    options: [
+    {
+        text: 'Congratulations, play again?',
+        nextText: -1
+    },
+    ]
+},
+{
+    id: 29,
+    text: 'Upon entering the cottage, you grandma does not look like herself at all.  As you get closer the figure jumps out showing itself to be the wolf you met on your way to grandmas.... ',
+    options: [
+    {
+        text: 'Run away',
+        nextText: 12
+    },
+    {
+        text: 'Give the frog to the wolf',
+        nextText: 30
+    },
+    {
+        text: 'Stand and fight',
+        nextText: 13
+    },
+    ]
+},
+{
+    id: 30,
+    text: 'You begin to take steps back in an attempt to create space between you and the wolf.  As you back up from the wolf the frog manages to hop out of your pocket and onto the floor.  The wolf in his greed and decides to eat the frog as a snack.  Instantly, the wolf feels ill and begins vomiting. In his exhaustive vomiting sequence he vomits grandma onto the floor.  After vomiting he flees the cottage.  You and grandma are able to enjoy the basket of goods peacefully.',
+    options: [
+    {
+        text: 'Congratulations, play again?',
+        nextText: -1
+    },
+    ]
+},
 ]
-
 startGame()
