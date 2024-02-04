@@ -246,7 +246,7 @@ const textNodes = [
 },
 {
     id: 17,
-    text: 'Frightened by both the wolf and the strange woodsman, you dart out of the cottage and make your way towards home.  The woodsman puzzled by your sudden desire to flee is defenseless while the wolf is angered because he lost his chance to eat you. Never missing an opportunity to eat, the wolf decides to eat the defenseless woodman instead. The wolf vows to find you and eat you next time...',
+    text: 'Frightened by both the wolf and the strange woodsman, you dart out of the cottage and make your way towards home.  The woodsman puzzled by your sudden desire to flee is defenseless while the wolf is angered because he lost his chance to eat you. Never missing an opportunity to eat, the wolf decides to eat the defenseless woodman instead. The wolf vows to find you and eat you next...',
     options: [
     {
         text: 'Play again?',
@@ -256,7 +256,7 @@ const textNodes = [
 },
 {
     id: 18,
-    text: 'You turn and leave riddled with guilt for giving up the basket of goodies meant for grandma.  As you turn to leave, the wolf you saw on your journey shows up.  He was planning to eat grandma before you arrived, but why settle for the old bag? The wolf with a nefarious smile opens his mouth and gobbles you up before you can leave or scream for help! If there is room, grandma is next!',
+    text: 'You turn and leave riddled with guilt for giving up the basket of goodies meant for grandma.  As you turn to leave, the wolf you saw on your journey shows up.  He was planning to eat grandma before you arrived, but why settle for the old bag? The wolf with a nefarious smile opens his mouth and gobbles you up before you can leave or scream for help! If there is room, grandma is next...',
     options: [
     {
         text: 'Play again?',
@@ -266,7 +266,7 @@ const textNodes = [
 },
 {
     id: 19,
-    text: 'You tell grandma what happened and she is very displeased! Your mother raised you better than that! She wags her finger and scolds you to go on home.  You think to yourself mother will not be pleased to hear this story!',
+    text: 'You walk up and tell grandma what happened. Grandma, the narcissistic old bag that she is, begins to read you the riot act. Already feeling bad about losing the basket you simply turn to leave the house.',
     options: [
     {
         text: 'Leave the house',
@@ -316,7 +316,7 @@ const textNodes = [
 },
 {
     id: 24,
-    text: 'You arrive at grandmas house and knock on the door. Grandma calls out to you to come inside. As you hear the voice you notice it does not sound normal.... ',
+    text: 'Your grandmother calls out to you, asking you to come inside.  You hear her voice and it does not sound normal. You wonder to yourself if its due to her not being well...',
     options: [
     {
         text: 'Turn around and do not go inside',
@@ -330,7 +330,7 @@ const textNodes = [
 },
 {
     id: 25,
-    text: 'You arrive at grandmas house and knock on the door. Grandma calls out to you to come inside. As you hear the voice you notice it does not sound normal.... ',
+    text: 'Your grandmother calls out to you, asking you to come inside.  You hear her voice and it does not sound normal. You wonder to yourself if its due to her not being well.',
     options: [
     {
         text: 'Turn around and do not go inside',
@@ -354,7 +354,7 @@ const textNodes = [
 },
 {
     id: 27,
-    text: 'Upon entering the cottage, you grandma does not look like herself at all.  As you get closer the figure jumps out showing itself to be the wolf you met on your way to grandmas.... ',
+    text: 'Upon entering the cottage, your grandma does not look like herself at all.  As you get closer the figure jumps out showing itself to be the wolf you met on your way to grandmas.... ',
     options: [
     {
         text: 'Run away',
@@ -400,7 +400,7 @@ const textNodes = [
 },
 {
     id: 30,
-    text: 'You begin to take steps back in an attempt to create space between you and the wolf.  As you back up from the wolf the frog manages to hop out of your pocket and onto the floor.  The wolf in his greed and decides to eat the frog as a snack.  Instantly, the wolf feels ill and begins vomiting. In his exhaustive vomiting sequence he vomits grandma onto the floor.  After vomiting he flees the cottage.  You and grandma are able to enjoy the basket of goods peacefully.',
+    text: 'You begin to take steps back in an attempt to create space between you and the wolf.  As you back up from the wolf the frog manages to hop out of your pocket and onto the floor.  The wolf ignores the frog and begins to close in on you. As he opens his mouth to eat you the frog jumps and lands in his mouth. The wolf noticing something has landed in his mouth stopped the pursuit.  Instantly, the wolf feels ill and begins vomiting. In his exhaustive vomiting sequence he vomits grandma onto the floor.  After vomiting he flees the cottage.  You and grandma are able to enjoy the basket of goods peacefully.',
     options: [
     {
         text: 'Congratulations, play again?',
