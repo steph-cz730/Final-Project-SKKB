@@ -1,44 +1,203 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  font-family: Gotham Rounded;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: #4f516e;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: #64afb9;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
 }
 
 .container {
-  width: 800px;
-  max-width: 80%;
-  background-color: rgb(172, 170, 206);
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px 2px;
+    width: 1000px;
+    max-width: 90%;
+    background-color:rgb(245, 183, 183);
+    font-family: 'Press Start 2P', system-ui;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: ridge;
+    border-color: #b81515;
+    box-shadow: 0 0 10px 2px;
+    margin-top: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text {
+    text-align: center; 
+    line-height: 1.5; 
+}
+
+.header-text {
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 20px;
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#game-name {
+    margin-bottom: 20px; 
+}
+
+#developers-info {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 14px;
+    color: #fff; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    z-index: 2; 
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none !important; 
+
+    transform: scale(1);
+}
+
+#developers-info:hover {
+    transform: scale(1.1);
+    text-decoration: none !important;
+}
+
+#developers-info:visited {
+    color: #fff; 
 }
 
 .btn-grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 10px;
-  margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .btn {
-  background-color: hsl(200, 28%, 66%);
-  border: 1px solid hsl(200, 21%, 47%);
-  border-radius: 5px;
-  padding: 5px 10px;
-  color: rgb(43, 43, 43);
-  outline: none;
+    font-family: 'Press Start 2P', system-ui;
+    background-color: hsl(200, 28%, 66%);
+    border: 1px solid hsl(200, 21%, 47%);
+    border-style: outset;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(43, 43, 43);
+    outline: none;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .btn:hover {
-  border-color: black;
+    border-color: black;
+    transform: scale(1.1);
+    cursor: pointer; 
+}
+
+.sun {
+    position: absolute;
+    top: 30px; 
+    left: 400px; 
+    width: 250px; 
+    height: 250px; 
+    background: url('yellow\ sun.png') no-repeat center center;
+    background-size: contain; 
+    box-shadow: 0 0 30px 15px rgba(255, 255, 0, 0.5);
+    border-radius: 100%;
+}
+
+.cloud-container {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    height: 350px; 
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cloud {
+    position: absolute;
+    top: 0; 
+    margin-top:70px;
+    width: 350px;
+    height: 120px;
+    background: #eceff1;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    animation: moveCloud 30s linear infinite; 
+}
+
+.cloud:nth-child(1) {
+    left: -300px;
+    animation-delay: 0s; 
+}
+
+.cloud:nth-child(2) {
+    left: 25%; 
+    animation-delay: 0s; 
+}
+
+.cloud:nth-child(3) {
+    left: 70%; 
+    animation-delay: 0s; 
+}
+
+.cloud:nth-child(4) {
+    left: 95%; 
+    animation-delay: 0s;
+}
+.cloud::after,
+.cloud::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.cloud::after {
+    width:120px;
+    height:140px;
+    top: -40px;
+    left:40px;
+}
+
+.cloud::before {
+  width:180px;
+  height:180px;
+  top: -70px;
+  left:30px;
+}
+
+@keyframes moveCloud {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(calc(-100% - 350px)); 
+    }
+}
+
+.grass-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: url('grass\ border.png') repeat-x center bottom; 
+  background-size: contain; 
+  animation: swayGrass 1s ease-in-out infinite alternate; 
+}
+
+@keyframes swayGrass {
+  to {
+      transform: translateY(-3px); 
+  }
 }
