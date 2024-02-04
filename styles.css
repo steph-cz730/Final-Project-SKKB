@@ -128,6 +128,18 @@ body {
     cursor: pointer; 
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .sun {
     object-fit: scale-down;
     position: absolute;
@@ -137,7 +149,7 @@ body {
     height: 250px; 
     background: url('yellow\ sun.png') no-repeat center right;
     background-size: contain; 
-    
+    animation: pulse 10s infinite;    
     box-shadow: 0 0 30px 15px rgba(255, 255, 0, 0.5);
     border-radius: 100%;
     max-width: 100%;
@@ -234,4 +246,19 @@ body {
     to {
         transform: translateY(-3px); 
     }
+}
+
+#avatar {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    bottom: 70px; 
+    right: 100px; 
+}
+
+#avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: pulse 5s infinite;
 }
