@@ -50,3 +50,8 @@ main {
     padding: 20px;
 }
 
+.small-tree{
+    max-width: 100%;
+    height: 300px;
+
+}
