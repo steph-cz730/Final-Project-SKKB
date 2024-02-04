@@ -170,7 +170,7 @@ const textNodes = [
     },
     {
     id: 11,
-    text: 'Upon entering the house, you notice grandma does not look like herself at all!  Long ears, a long nose and yellow eyes start back at you from under one of Grandmas nightgowns...',
+    text: 'Upon entering the house, you notice grandma does not look like herself at all!  Long ears, a long nose and yellow eyes stare back at you from under one of Grandmas nightgowns...',
     options: [
     {
         text: 'Run away!',
