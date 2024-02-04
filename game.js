@@ -266,7 +266,7 @@ const textNodes = [
 },
 {
     id: 19,
-    text: 'You walk up and tell grandma what happened. Grandma, the narcissistic old bag that she is, begins to read you the riot act. Already feeling bad about losing the basket you simply turn to leave the house.',
+    text: 'You walk up and tell grandma what happened. Grandma, the narcissistic old bag that she is, begins to read you the riot act. Already feeling bad about losing the basket, you simply turn to leave the house.',
     options: [
     {
         text: 'Leave the house',
