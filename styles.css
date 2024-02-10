@@ -75,7 +75,8 @@ body {
 }
 
 #game-name {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    margin-top: 150px;
 }
 
 #developers-info {
@@ -262,3 +263,8 @@ body {
     object-fit: cover;
     animation: pulse 5s infinite;
 }
+
+#emoji-container {
+    font-size: 4em;
+}
+
