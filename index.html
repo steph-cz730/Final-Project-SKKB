@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,45 +11,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script defer src="game.js"></script>
-    <title>Final Project</title>
+    <script defer src="avatarSelection.js"></script>
+    <title>The Adventures of Little Red Riding Hood</title>
 </head>
+
 <body>
-    <div class="cloud-container">
-        <div class="cloud"></div>
-        <div class="cloud"></div>
-        <div class="cloud"></div>
-        <div class="cloud"></div>
-    </div>
-
-    <div class="grass-container">
-        <div class="grass-blade"></div>
-        <div class="grass-blade"></div>
-        <div class="grass-blade"></div>
-    </div>
-
-    <div class="sun"></div>
-
-    <div id="developers-info">
-        <a href="/index2.html" target="_blank">Meet The Devs!</a>
-    </div>
-
-    <header class="header-text">
-        <div id="game-name">
-            <h1>Adventures of Little Red Riding Hood</h1>
-        </div>
-    </header>
-
-    <div class="container">
-        <div id="text">Text</div>
-        <div id="option-buttons" class="btn-grid">
-            <button class="btn">Option 1</button>
-            <button class="btn">Option 2</button>
-            <button class="btn">Option 3</button>
-            <button class="btn">Option 4</button>
+    <div id="avatarSelectionPopup" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAvatarSelectionPopup()">&times;</span>
+            <h2>Which Little Red Riding Hood Are You?</h2>
+            <div id="avatarOptions">
+                <img src="images/Light.png" alt="Avatar 1" onclick="selectAvatar('Light')">
+                <img src="images/Medium.png" alt="Avatar 2" onclick="selectAvatar('Medium')">
+                <img src="images/Dark.png" alt="Avatar 3" onclick="selectAvatar('Dark')">
+            </div>
         </div>
     </div>
-    <div id="avatar">
-        <img src="LRRH avi.png" alt="little red riding hood"
+
+    <div id="game-container">
+        <div class="cloud-container">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+        </div>
+
+        <div class="grass-container">
+            <div class="grass-blade"></div>
+            <div class="grass-blade"></div>
+            <div class="grass-blade"></div>
+        </div>
+
+        <div class="sun"></div>
+
+        <div id="developers-info">
+            <a href="/index2.html" target="_blank">Meet The Developers!</a>
+        </div>
+
+        <header class="header-text">
+            <div id="game-name">
+                <h1>The Adventures of Little Red Riding Hood</h1>
+            </div>
+        </header>
+
+        <div class="container">
+            <div id="text">Text</div>
+            <div id="option-buttons" class="btn-grid">
+                <button class="btn" onclick="openAvatarSelectionPopup()">Begin</button>
+                <button class="btn">Option 1</button>
+                <button class="btn">Option 2</button>
+                <button class="btn">Option 3</button>
+                <button class="btn">Option 4</button>
+            </div>
+        </div>
+    </div>
+    <div id="avatar-gif-container">
+        <img id="avatar-gif" src="" alt="Selected Avatar">
     </div>
 </body>
+
 </html>
