@@ -69,3 +69,10 @@ main {
     height: 400px;
     width: 400px;
 }
+.small-avatar {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.small-avatar:hover {
+    transform: scale(1.1);
+}
