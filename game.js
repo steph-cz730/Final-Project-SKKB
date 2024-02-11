@@ -379,7 +379,7 @@ const textNodes = [
 
 {
     id: 18,
-    text: 'You turn and leave riddled with guilt for giving up the basket of goodies meant for grandma. Just as you turn to leave, the wolf shows up! He was planning to eat grandmother before you arrived, but why settle for just her? With a nefarious smile, the wolf opens his mouth and gobbles you up before you can leave or even scream for help! Poor grandmother is surely next...',
+    text: 'You turn and leave riddled with guilt for giving up the basket of goodies meant for your grandmother. Just as you turn to leave, the wolf shows up! He was planning to eat grandmother before you arrived, but why settle for just her? With a nefarious smile, the wolf opens his mouth and gobbles you up before you can leave or even scream for help! Poor grandmother is surely next...',
     options: [
     {
         text: 'Leaving grandmothers cottage was not the way to go, you were both gobbled up! Play again?',
@@ -401,7 +401,7 @@ const textNodes = [
 
 {
     id: 20,
-    text: 'You turn and leave riddled with guilt for giving up the basket of goodies meant for grandma. Just as you turn to leave, the wolf shows up! He was planning to eat grandmother before you arrived, but why settle for just her? With a nefarious smile, the wolf opens his mouth and gobbles you up before you can leave or even scream for help! Poor grandmother is surely next...',
+    text: 'You turn and leave riddled with guilt for giving up the basket of goodies meant for your grandmother. Just as you turn to leave, the wolf shows up! He was planning to eat grandmother before you arrived, but why settle for just her? With a nefarious smile, the wolf opens his mouth and gobbles you up before you can leave or even scream for help! Poor grandmother is surely next...',
     options: [
     {
         text: 'Leaving grandmothers cottage was not the way to go, you were both gobbled up! Play again?',
