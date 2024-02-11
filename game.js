@@ -3,6 +3,7 @@ const optionButtonsElement = document.getElementById('option-buttons');
 const avatarGifContainer = document.getElementById('avatar-gif-container');
 
 let state = {};
+let nextTextNodeId = 0; 
 
 function startGame() {
     state = {};
@@ -28,19 +29,6 @@ function showTextNode(textNodeIndex) {
     });
 }
 
-function showOption(option) {
-    return option.requiredState == null || option.requiredState(state);
-}
-
-function selectOption(option) {
-    const nextTextNodeId = option.nextText;
-    if (nextTextNodeId <= 0) {
-        return startGame();
-    }
-    state = Object.assign(state, option.setState);
-    showTextNode(nextTextNodeId);
-}
-
 function openAvatarSelectionPopup() {
     const avatarSelectionPopup = document.getElementById('avatarSelectionPopup');
     avatarSelectionPopup.style.display = 'block';
@@ -59,6 +47,74 @@ function selectAvatar(avatar) {
     closeAvatarSelectionPopup();
 }
 
+function showOption(option) {
+    return option.requiredState == null || option.requiredState(state);
+}
+
+function selectOption(option) {
+    const nextTextNodeId = option.nextText;
+    if (nextTextNodeId <= 0) {
+        return startGame();
+    }
+    state = Object.assign(state, option.setState);
+    showTextNode(nextTextNodeId);
+
+
+    if (nextTextNodeId === 13) {
+        showModal(); 
+    }
+}
+
+function showModal() {
+
+    const modal = document.getElementById('finalBattleModal');
+
+    const gifImage = document.getElementById('finalBattleGif');
+
+    gifImage.src = 'images/Final Battle.gif';
+
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    const gifAspectRatio = gifImage.naturalWidth / gifImage.naturalHeight;
+    let modalWidth, modalHeight;
+
+    if (screenWidth / screenHeight > gifAspectRatio) {
+        modalHeight = screenHeight * 0.8; 
+        modalWidth = modalHeight * gifAspectRatio;
+    } else {
+        modalWidth = screenWidth * 0.8;
+        modalHeight = modalWidth / gifAspectRatio;
+    }
+
+
+    modal.style.width = modalWidth + 'px';
+    modal.style.height = modalHeight + 'px';
+
+
+    gifImage.style.width = modalWidth + 'px';
+    gifImage.style.height = modalHeight + 'px';
+
+
+    modal.style.top = (screenHeight - modalHeight) / 2 + 'px';
+    modal.style.left = (screenWidth - modalWidth) / 2 + 'px';
+
+
+    modal.style.display = 'block';
+
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+        const closeButton = document.querySelector('.final-battle-close');
+        closeButton.addEventListener('click', closeModal);
+    }
+    
+    function closeModal() {
+        const modal = document.getElementById('finalBattleModal');
+        modal.style.display = 'none';
+    }
+};
 
 const textNodes = [
 {
