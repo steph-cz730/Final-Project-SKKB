@@ -291,13 +291,6 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
-.avatar-gif-container {
-    display: flex;
-    align-items: center;
-    margin-top: 50px; 
-    margin-right: 20px; 
-}
-
 #avatar-gif-container {
     position: absolute;
     top: 75%; 
