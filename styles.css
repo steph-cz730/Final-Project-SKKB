@@ -78,7 +78,8 @@ body {
 }
 
 #game-name {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    margin-top: 150px;
 }
 
 #developers-info {
@@ -302,6 +303,11 @@ body {
     width: 400px;
     height: auto;
     margin-left: 20px; 
+}
+
+#emoji-container {
+    font-size: 4em;
+    text-align: center; 
 }
 
 #finalBattleModal {
