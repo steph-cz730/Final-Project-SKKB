@@ -3,9 +3,25 @@
     margin-bottom: 20px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px rgb(35, 103, 143);
+    position: relative; 
+    background-color: #71d3e4;
 }
 
+.links {
+    position: absolute; 
+    bottom: 10px; 
+    left: 150px; 
+    width: calc(100% - 20px); 
+    display: flex;
+    justify-content: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+}
+
+.links a {
+    margin: 0 10px; 
+}
 .small-image {
     max-width: 100%;
     height: 300px;
@@ -15,7 +31,7 @@
     margin-bottom: 100px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px rgb(67, 125, 148);
 }
 
 .team-bios {
@@ -50,7 +66,13 @@ main {
 }
 
 .small-tree{
-    max-width: 100%;
-    height: 300px;
+    height: 400px;
+    width: 400px;
+}
+.small-avatar {
+    transition: transform 0.3s ease-in-out; 
+}
 
+.small-avatar:hover {
+    transform: scale(1.1);
 }
